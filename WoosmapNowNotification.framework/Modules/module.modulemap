@@ -1,0 +1,11 @@
+framework module WoosmapNowNotification {
+  umbrella header "WoosmapNowNotification.h"
+
+  export *
+  module * { export * }
+}
+
+module WoosmapNowNotification.Swift {
+    header "WoosmapNowNotification-Swift.h"
+    requires objc
+}

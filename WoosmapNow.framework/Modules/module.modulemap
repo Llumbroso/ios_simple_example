@@ -1,0 +1,11 @@
+framework module WoosmapNow {
+  umbrella header "WoosmapNow.h"
+
+  export *
+  module * { export * }
+}
+
+module WoosmapNow.Swift {
+    header "WoosmapNow-Swift.h"
+    requires objc
+}
