@@ -10,7 +10,7 @@ Make sure your have the proper capabilities checked
 
 ![alt text](./ios-doc-assets/add_capabilities_notifications.png "Check the capabilities notifications")
 
-You also need to define two keys in the Info.plist : 
+You also need to define two keys in the `Info.plist`: 
 
 `NSLocationAlwaysAndWhenInUseUsageDescription` and `NSLocationWhenInUseUsageDescription`
 
