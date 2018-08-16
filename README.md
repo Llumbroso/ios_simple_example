@@ -93,9 +93,11 @@ If you want rich notifications (AKA with Image, subtitles and more...) you need 
 
 ![alt text](./ios-doc-assets/add_target.png "Add target")
 
-![alt text](./ios-doc-assets/select_notification_extension.png "Add target")
+![alt text](./ios-doc-assets/select_notification_extension.png "Notification Service Extension")
 
-If you don't want to build your own, you can use the `WoosmapNowNotifications` framework we provide for default implementation. Add the framework to the `NotificationExtension Service`
+![alt text](./ios-doc-assets/add_notification_service.png "Finish")
+
+If you don't want to code your own, you can use the `WoosmapNowNotifications` framework we provide for default implementation. Add the framework to the `NotificationExtension Service`
 
 ![alt text](./ios-doc-assets/add_framework_notifications.png "Add target")
 
