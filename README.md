@@ -1,5 +1,12 @@
 # ios_simple_example
 
+## Information
+
+WoosmapNow Framework uses iOS `regionMonitoring`. 
+The number of monitored zone are limited. Both your app and the phone system have limitations. 
+WoosmapNow is using a fair count of regions. 
+Beware of this information if your app is already using this iOS feature.
+
 ## 1 - Setup
 
 First you need to embed our Frameworks
@@ -64,6 +71,21 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
+In order to be sure to avoid loosing data, you also need to call `willTerminate` in the proper AppDelegate function : 
+```swift
+func applicationWillTerminate(_ application: UIApplication) {
+    Now.shared.willTerminate()
+}
+```
+
+```swift
+func applicationDidEnterBackground(_ application: UIApplication) {
+   if CLLocationManager.authorizationStatus() != .notDetermined {
+      Now.shared.startMonitoringInBackground()
+   }
+}
+```
+
 
 ## 4 - Rich notifications
 
@@ -117,6 +139,29 @@ import WoosmapNowNotification
 class NotificationService: WoosmapNowNotification {
 
 }
+```
+
+Woosmap is tagging its Notifications payload with a `woosmap` key in `userInfo`'s dict. 
+If your app is already using a NotificationExtension you can filter received payload by handling only those without this flag.
+
+### 5 - Tracking opened notifications
+
+WoosmapNow provides a method to notify our backends that the notification that we sent has been opened by the user.
+`userInfo` is the notification payload. 
+
+It can be provided by the `didReceiveRemoteNotification` method from AppDelegate. 
+
+```swift
+Now.shared.notificationOpened(userInfo: userInfo)
+```
+
+Beware that this AppDelegate method is called only when the app received a remote notification AND is running (in background or foreground).
+This means that you should check for your App's current state.
+
+Or it can be provided by the `didFinishLaunchingWithOptions` if your app wasn't running.
+ 
+```swift
+Now.shared.notificationOpened(userInfo: launchOptions![UIApplicationLaunchOptionsKey.remoteNotification])
 ```
 
 
