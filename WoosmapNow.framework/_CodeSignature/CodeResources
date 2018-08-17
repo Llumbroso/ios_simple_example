@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/WoosmapNow-Swift.h</key>
 		<data>
-		iPjGN5q0nO8JuOpEgAiGNYioTjg=
+		hnNzAYerErX4Bm0VifFuwl/KVic=
 		</data>
 		<key>Headers/WoosmapNow.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pSVZlEMnSqGMqKrp+cqT+AAw32c=
+		UfvDA51qKF3FgIWNgowBZl9sSm4=
 		</data>
 		<key>LocationsData.momd/LocationsData.mom</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/WoosmapNow.swiftmodule/arm.swiftdoc</key>
 		<data>
-		3WRv70KiBLqEzL5I1kcbZ+HKxB8=
+		FPp3pOHT+U9x4bi9kJUtFLFXTR4=
 		</data>
 		<key>Modules/WoosmapNow.swiftmodule/arm.swiftmodule</key>
 		<data>
-		UdI63B6Y4Tfqz5KIrP1ItRKgnrQ=
+		fL3o25LleI6Rw7XVbXPV8sSox7s=
 		</data>
 		<key>Modules/WoosmapNow.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		p7cYmMohWYlQZcSxtxHgCw6PsXE=
+		neojEwpbz8yLwOUWOIV85X3LpdY=
 		</data>
 		<key>Modules/WoosmapNow.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		fHOK3nTHs+mggFRGgI1VI7yQc7A=
+		8TESb0BtWIPW+FCBGb9VFHpt8R4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,11 +59,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iPjGN5q0nO8JuOpEgAiGNYioTjg=
+			hnNzAYerErX4Bm0VifFuwl/KVic=
 			</data>
 			<key>hash2</key>
 			<data>
-			XO7bU1ynqSIGtddlr38ZlGN7onziKtKTpgitzyTLPt0=
+			F1jFqgzAGo/llPm6u3R6++AGZtTctaltJWeOkd3lE2k=
 			</data>
 		</dict>
 		<key>Headers/WoosmapNow.h</key>
@@ -125,44 +125,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3WRv70KiBLqEzL5I1kcbZ+HKxB8=
+			FPp3pOHT+U9x4bi9kJUtFLFXTR4=
 			</data>
 			<key>hash2</key>
 			<data>
-			92BRZB92OwYR0Z8rZ/4kbZBU9EnDQFiUfB/ZY86KhPE=
+			RJblVdbbp2wG0hS3RwUUZm6F3mxmyXK2LGQqbI5a19E=
 			</data>
 		</dict>
 		<key>Modules/WoosmapNow.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UdI63B6Y4Tfqz5KIrP1ItRKgnrQ=
+			fL3o25LleI6Rw7XVbXPV8sSox7s=
 			</data>
 			<key>hash2</key>
 			<data>
-			7jfTwBvMvQnhjf4qaDE6dmssU8QCGouJqQ2oLTEFJF8=
+			RkOaozx4vcnplcNJ8cRfZdaSJb+nywOvYY1bDPAlq+g=
 			</data>
 		</dict>
 		<key>Modules/WoosmapNow.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			p7cYmMohWYlQZcSxtxHgCw6PsXE=
+			neojEwpbz8yLwOUWOIV85X3LpdY=
 			</data>
 			<key>hash2</key>
 			<data>
-			XsZrmI2ZQ5JqJyiLmdY9B6Br6dpWmcU3V5dTZgBiCKI=
+			tsDTsd26RqHzb1VIPRjKOSJpvZ7O6WGUIsgbD1O66VQ=
 			</data>
 		</dict>
 		<key>Modules/WoosmapNow.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fHOK3nTHs+mggFRGgI1VI7yQc7A=
+			8TESb0BtWIPW+FCBGb9VFHpt8R4=
 			</data>
 			<key>hash2</key>
 			<data>
-			qZQnss3seCcByOAsjBec6zqiBN8LcFZEY+aRZFG3dEU=
+			Yv/lE/CMufItAT46H5TPgvJz+qeXoKt7eLIa++ynwnk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

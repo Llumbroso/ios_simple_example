@@ -271,6 +271,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Now * _Nonnu
 /// \param tracking the new tracking status to set
 ///
 - (void)updateUserTrackingWithTracking:(BOOL)tracking;
+/// Get current tracking status for the user from woosmap’s backend
+- (BOOL)getUserTracking SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class NSHTTPURLResponse;
@@ -281,14 +283,6 @@ SWIFT_CLASS("_TtC10WoosmapNow9Requester")
 - (void)getWithUrlRequest:(NSURLRequest * _Nonnull)urlRequest completionHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull, NSHTTPURLResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_DEPRECATED_OBJC("Swift method 'Requester.get(urlRequest:completionHandler:)' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (void)postWithUrl:(NSString * _Nonnull)url data:(NSDictionary * _Nonnull)data completion:(void (^ _Nonnull)(NSInteger))completion SWIFT_DEPRECATED_OBJC("Swift method 'Requester.post(url:data:completion:)' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10WoosmapNow22SettingsViewController")
-@interface SettingsViewController : UIViewController
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #if __has_attribute(external_source_symbol)
