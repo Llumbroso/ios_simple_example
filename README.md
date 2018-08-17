@@ -78,6 +78,14 @@ func applicationWillTerminate(_ application: UIApplication) {
 }
 ```
 
+```swift
+func applicationDidEnterBackground(_ application: UIApplication) {
+   if CLLocationManager.authorizationStatus() != .notDetermined {
+      Now.shared.startMonitoringInBackground()
+   }
+}
+```
+
 
 ## 4 - Rich notifications
 
@@ -143,13 +151,17 @@ WoosmapNow provides a method to notify our backends that the notification that w
 
 It can be provided by the `didReceiveRemoteNotification` method from AppDelegate. 
 
+```swift
+Now.shared.notificationOpened(userInfo: userInfo)
+```
+
 Beware that this AppDelegate method is called only when the app received a remote notification AND is running (in background or foreground).
 This means that you should check for your App's current state.
 
 Or it can be provided by the `didFinishLaunchingWithOptions` if your app wasn't running.
  
-
-
 ```swift
-Now.shared.notificationOpened(userInfo: userInfo)
+Now.shared.notificationOpened(userInfo: launchOptions![UIApplicationLaunchOptionsKey.remoteNotification])
 ```
+
+
