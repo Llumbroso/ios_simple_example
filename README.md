@@ -27,7 +27,14 @@ This must only be done the first time the app is launched with WoosmapNow or whe
 You can do this using a simple view and a `UISwitch` : 
 
 ```swift
-@IBAction func trackingChanged(_ sender: UISwitch) {
+@IBOutlet weak var trackingSwitch: UISwitch!
+    
+override func viewDidLoad() {
+    super.viewDidLoad()
+    self.trackingSwitch.isOn = Now.shared.getUserTracking()
+}
+
+@IBAction func trackingSwitchChanged(_ sender: UISwitch) {
     Now.shared.updateUserTracking(tracking: sender.isOn)
 }
 ```
