@@ -1,5 +1,12 @@
 # ios_simple_example
 
+## Information
+
+WoosmapNow Framework uses iOS `regionMonitoring`. 
+The number of monitored zone are limited. Both your app and the phone system have limitations. 
+WoosmapNow is using a fair count of regions. 
+Beware of this information if your app is already using this iOS feature.
+
 ## 1 - Setup
 
 First you need to embed our Frameworks
@@ -119,4 +126,6 @@ class NotificationService: WoosmapNowNotification {
 }
 ```
 
+Woosmap is tagging its Notifications payload with a `woosmap` key in `userInfo`'s dict. 
+If your app is already using rich notifications you can filter received payload by handling only those without this flag.
 
