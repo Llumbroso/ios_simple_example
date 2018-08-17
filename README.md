@@ -71,7 +71,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-In order to be sure to avoid loosing data, you also need to call `willTerminate` in the proper AppDelegate function : 
+In order to be sure to avoid loosing data, you also need to call `willTerminate` in the proper AppDelegate method : 
 ```swift
 func applicationWillTerminate(_ application: UIApplication) {
     Now.shared.willTerminate()
@@ -108,7 +108,7 @@ if #available(iOS 10, *) {
 UIApplication.shared.registerForRemoteNotifications()
 ```
 
-You should have two function in your AppDelegate : `didFailToRegisterForRemoteNotificationsWithError` and `didRegisterForRemoteNotificationsWithDeviceToken`.
+You should have two methods in your AppDelegate : `didFailToRegisterForRemoteNotificationsWithError` and `didRegisterForRemoteNotificationsWithDeviceToken`.
 
 You need to give Woosmap Now the notification token each time the `AppDelegate.didRegisterForRemoteNotificationsWithDeviceToken` is called : 
 
