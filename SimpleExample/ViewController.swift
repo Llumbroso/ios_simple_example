@@ -11,10 +11,16 @@ import WoosmapNow
 import UserNotifications
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var trackingSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.trackingSwitch.isOn = Now.shared.getUserTracking()
+    }
+    
+    @IBAction func trackingSwitchChanged(_ sender: UISwitch) {
+        Now.shared.updateUserTracking(tracking: sender.isOn)
     }
     
     @IBAction func ActivateNotifications(_ sender: UIButton) {
@@ -25,10 +31,6 @@ class ViewController: UIViewController {
             UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.badge, .sound, .alert], categories: nil))
         }
         UIApplication.shared.registerForRemoteNotifications()
-    }
-    
-    @IBAction func ActivateWoosmapNow(_ sender: UIButton) {
-        Now.shared.updateUserTracking(tracking: true)
     }
     
     override func didReceiveMemoryWarning() {
