@@ -25,23 +25,32 @@
                                     <action selector="ActivateNotifications:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DOa-Tf-eDs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nP-bc-e66">
-                                <rect key="frame" x="108" y="290" width="159" height="30"/>
-                                <state key="normal" title="Activate WoosmapNow"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activate WoosmapNow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmU-yg-N0b">
+                                <rect key="frame" x="98.5" y="285" width="178" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hDD-8I-iwe">
+                                <rect key="frame" x="43" y="280" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="ActivateWoosmapNow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="24a-hs-GjN"/>
+                                    <action selector="trackingSwitchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="wkg-Te-x8S"/>
                                 </connections>
-                            </button>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="nmU-yg-N0b" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AbC-GF-Yae"/>
+                            <constraint firstItem="nmU-yg-N0b" firstAttribute="top" secondItem="cux-a1-oHk" secondAttribute="bottom" constant="35" id="bCA-Ol-uDT"/>
                             <constraint firstItem="cux-a1-oHk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cxW-QK-LeF"/>
-                            <constraint firstItem="4nP-bc-e66" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sOd-7h-hgp"/>
                             <constraint firstItem="cux-a1-oHk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="sgS-TZ-kLQ"/>
-                            <constraint firstItem="4nP-bc-e66" firstAttribute="top" secondItem="cux-a1-oHk" secondAttribute="bottom" constant="40" id="vpd-VN-XEm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="trackingSwitch" destination="hDD-8I-iwe" id="5HU-qC-CBB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
