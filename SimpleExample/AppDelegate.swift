@@ -16,12 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         Now.shared.setPrivateKey(privateKey: "__YOUR_WOOSMAP_MOBILE_PRIVATE_KEY__")
         
         if (CLLocationManager.authorizationStatus() != .notDetermined) {
             Now.shared.startMonitoringInBackground()
+        }
+        
+        if (launchOptions![UIApplication.LaunchOptionsKey.remoteNotification] != nil) {
+            Now.shared.notificationOpened(userInfo: launchOptions![UIApplication.LaunchOptionsKey.remoteNotification] as! [AnyHashable : Any])
+
         }
         
         return true
@@ -42,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-       
+        Now.shared.didBecomeActive()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
@@ -61,7 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> ())
     {
-        if ( application.applicationState == UIApplicationState.inactive || application.applicationState == UIApplicationState.background ){
+        if ( application.applicationState == UIApplication.State.inactive || application.applicationState == UIApplication.State.background ){
             Now.shared.notificationOpened(userInfo: userInfo)
         }
     }

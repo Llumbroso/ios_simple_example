@@ -86,6 +86,13 @@ func applicationDidEnterBackground(_ application: UIApplication) {
 }
 ```
 
+Too keep our SDK up to date with user's data we need to call `didBecomeActive` in the proper AppDelegate method too.
+```swift
+func applicationDidBecomeActive(_ application: UIApplication) {
+        Now.shared.didBecomeActive()
+}
+```
+
 
 ## 4 - Rich notifications
 

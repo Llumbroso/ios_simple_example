@@ -13,12 +13,11 @@
 		EA15D97B2122F881009B1388 /* SimpleExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA15D9792122F881009B1388 /* SimpleExample.xcdatamodeld */; };
 		EA15D97D2122F883009B1388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA15D97C2122F883009B1388 /* Assets.xcassets */; };
 		EA15D9802122F883009B1388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA15D97E2122F883009B1388 /* LaunchScreen.storyboard */; };
-		EA15D98B2122FA8C009B1388 /* WoosmapNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA15D98A2122FA8C009B1388 /* WoosmapNow.framework */; };
-		EA15D99021230439009B1388 /* WoosmapNow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA15D98A2122FA8C009B1388 /* WoosmapNow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EA15D9932123043C009B1388 /* WoosmapNowNotification.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA15D98C2122FA95009B1388 /* WoosmapNowNotification.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EA15D99B21230AA1009B1388 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA15D99A21230AA1009B1388 /* NotificationService.swift */; };
 		EA15D99F21230AA1009B1388 /* SimpleExampleNotification.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EA15D99821230AA1009B1388 /* SimpleExampleNotification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		EA15D9A421230B03009B1388 /* WoosmapNowNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA15D98C2122FA95009B1388 /* WoosmapNowNotification.framework */; };
+		EA36279E212AC85A006C845D /* WoosmapNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA36279C212AC85A006C845D /* WoosmapNow.framework */; };
+		EA36279F212AC85A006C845D /* WoosmapNow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA36279C212AC85A006C845D /* WoosmapNow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA3627A2212AC86C006C845D /* WoosmapNowNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA36279D212AC85A006C845D /* WoosmapNowNotification.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EA15D9932123043C009B1388 /* WoosmapNowNotification.framework in Embed Frameworks */,
-				EA15D99021230439009B1388 /* WoosmapNow.framework in Embed Frameworks */,
+				EA36279F212AC85A006C845D /* WoosmapNow.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,12 +64,12 @@
 		EA15D97C2122F883009B1388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA15D97F2122F883009B1388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA15D9812122F883009B1388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA15D98A2122FA8C009B1388 /* WoosmapNow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WoosmapNow.framework; sourceTree = "<group>"; };
-		EA15D98C2122FA95009B1388 /* WoosmapNowNotification.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WoosmapNowNotification.framework; sourceTree = "<group>"; };
 		EA15D98E2122FAB1009B1388 /* SimpleExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleExample.entitlements; sourceTree = "<group>"; };
 		EA15D99821230AA1009B1388 /* SimpleExampleNotification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SimpleExampleNotification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA15D99A21230AA1009B1388 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		EA15D99C21230AA1009B1388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA36279C212AC85A006C845D /* WoosmapNow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WoosmapNow.framework; sourceTree = "<group>"; };
+		EA36279D212AC85A006C845D /* WoosmapNowNotification.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WoosmapNowNotification.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA15D98B2122FA8C009B1388 /* WoosmapNow.framework in Frameworks */,
+				EA36279E212AC85A006C845D /* WoosmapNow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA15D9A421230B03009B1388 /* WoosmapNowNotification.framework in Frameworks */,
+				EA3627A2212AC86C006C845D /* WoosmapNowNotification.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,8 +129,8 @@
 		EA15D9872122FA66009B1388 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EA15D98C2122FA95009B1388 /* WoosmapNowNotification.framework */,
-				EA15D98A2122FA8C009B1388 /* WoosmapNow.framework */,
+				EA36279C212AC85A006C845D /* WoosmapNow.framework */,
+				EA36279D212AC85A006C845D /* WoosmapNowNotification.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,6 +196,7 @@
 				TargetAttributes = {
 					EA15D96E2122F880009B1388 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -209,6 +208,7 @@
 					};
 					EA15D99721230AA1009B1388 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -422,6 +422,7 @@
 				CODE_SIGN_ENTITLEMENTS = SimpleExample/SimpleExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38H4FA3J9J;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -433,7 +434,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.webgeoservices.SimpleExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -446,6 +447,7 @@
 				CODE_SIGN_ENTITLEMENTS = SimpleExample/SimpleExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38H4FA3J9J;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -457,7 +459,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.webgeoservices.SimpleExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -480,7 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.webgeoservices.SimpleExample.SimpleExampleNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -503,7 +505,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.webgeoservices.SimpleExample.SimpleExampleNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
